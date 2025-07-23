@@ -1,34 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
+import CardList from './components/CardList/CardList'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Navbar />
+      <CardList 
+        cards={[
+          { id: '1', title: 'Card 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula quam non mi commodo, ut commodo ex gravida. Sed lacinia vitae purus laoreet imperdiet. Fusce maximus consequat velit, vitae viverra lorem fringilla semper. Nunc id massa id ligula mollis tristique nec vel massa. Vivamus congue convallis iaculis. Fusce id nibh vulputate felis pretium laoreet. Fusce hendrerit id magna et luctus. Mauris et turpis bibendum, vestibulum leo a, laoreet nisi.' },
+          { id: '2', title: 'Card 2', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula quam non mi commodo, ut commodo ex gravida. Sed lacinia vitae purus laoreet imperdiet. Fusce maximus consequat velit, vitae viverra lorem fringilla semper. Nunc id massa id ligula mollis tristique nec vel massa. Vivamus congue convallis iaculis. Fusce id nibh vulputate felis pretium laoreet. Fusce hendrerit id magna et luctus. Mauris et turpis bibendum, vestibulum leo a, laoreet nisi.' },
+          { id: '3', title: 'Card 3', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula quam non mi commodo, ut commodo ex gravida. Sed lacinia vitae purus laoreet imperdiet. Fusce maximus consequat velit, vitae viverra lorem fringilla semper. Nunc id massa id ligula mollis tristique nec vel massa. Vivamus congue convallis iaculis. Fusce id nibh vulputate felis pretium laoreet. Fusce hendrerit id magna et luctus. Mauris et turpis bibendum, vestibulum leo a, laoreet nisi.' }
+        ]}
+      />
+    </div>
   )
 }
 
