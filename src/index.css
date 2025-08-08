@@ -1,0 +1,16 @@
+:root {
+  --background: #393e41;
+  --text: #f6f7eb;
+  --color: #e94f37;
+}
+
+[data-theme="light"] {
+  --background: #f6f7eb;
+  --text: #393e41;
+  --color: #e94f37;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
