@@ -1,13 +1,13 @@
 :root {
-  --background: #393e41;
-  --text: #f6f7eb;
-  --color: #e94f37;
+  --background: #34344A;
+  --text: #FDFFFC;
+  --color: #EE964B;
 }
 
 [data-theme="light"] {
-  --background: #f6f7eb;
-  --text: #393e41;
-  --color: #e94f37;
+  --background: #FDFFFC;
+  --text: #011627;
+  --color: #EE964B;
 }
 
 body {

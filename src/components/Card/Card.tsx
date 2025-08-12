@@ -1,22 +1,28 @@
+import Image from "../Image/Image";
+import ArticleText from "../ArticleText/ArticleText";
+import LinkButton from "../LinkButton/LinkButton";
+
 import type { ICard } from "../../interfaces/ICard";
 
-export default function Card({id, imageUrl, title, description}: ICard) {
-
-  if(!imageUrl) (imageUrl = "/public/image-solid-full.svg");
-
+export default function Card({ image, title, subtitle, description, buttonHref, buttonText, buttonIcon}: ICard) {
   return (
-    <div className="mb-4 lg:mb-0 lg:me-4 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl border border-gray-400">
-      <img 
-        src={imageUrl} 
-        alt={title} 
-        className="w-full h-75 object-cover"
-        loading="lazy" 
-      />
-      <span className="block pt-0 p-4">
-        <h2 className="text-xl font-bold mt-2">{title}</h2>
-        <p className="text-gray-600 overflow-hidden max-h-[100px]">{description}</p>
-        <a href="#" className="text-blue-500 hover:underline">Learn more</a>
+    <div className="relative p-4 rounded-xl grid gap-4">
+      <div className="rounded-xl absolute inset-0 bg-white/20 backdrop-blur-md z-0"></div>
+
+      <span className="rounded-md flex overflow-hidden z-1">
+        <Image url={image} />
       </span>
+      <ArticleText
+        title={title}
+        subtitle={subtitle}
+        text={description}
+      />
+      <LinkButton
+        className="border p-2 rounded-md text-center z-1 hover:bg-gradient-to-r from-[#76030F] to-[#121B67]"
+        href={buttonHref}
+        text={buttonText}
+        icon={buttonIcon}
+      />
     </div>
   )
 }
