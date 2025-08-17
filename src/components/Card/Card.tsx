@@ -1,28 +1,34 @@
-import Image from "../Image/Image";
-import ArticleText from "../ArticleText/ArticleText";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LinkButton from "../LinkButton/LinkButton";
 
-import type { ICard } from "../../interfaces/ICard";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 
-export default function Card({ image, title, subtitle, description, buttonHref, buttonText, buttonIcon}: ICard) {
-  return (
-    <div className="relative p-4 rounded-xl grid gap-4">
-      <div className="rounded-xl absolute inset-0 bg-white/20 backdrop-blur-md z-0"></div>
+type Card = {
+  title: string,
+  description: string,
+  icons: Array<any>,
+  href: string,
+  hrefInnerText?: string
+}
 
-      <span className="rounded-md flex overflow-hidden z-1">
-        <Image url={image} />
+export default function Card({title, description, icons, href, hrefInnerText}: Card) {
+
+  const mappedIcons = icons ? icons.map(icon => <FontAwesomeIcon icon={icon} />) : false;
+
+  return(
+    <div className="grid gap-4 p-10 text-black relative">
+      <div className="bg-white/30 backdrop-blur-sm w-full h-full absolute z-1 rounded-xl" />
+      <span className="z-2 grid gap-4">
+        <header className="font-bold text-white">{title}</header>
+        <p className="h-24 overflow-auto text-white">{description}</p>
+        {icons && <span className="flex gap-2">{mappedIcons}</span>}
+        <LinkButton 
+          className="border-2 p-2 px-4 w-fit text-center rounded-lg transition-colors bg-[#ff0d5a] text-white font-semibold" 
+          text={hrefInnerText} 
+          href={href}
+          icon={faGithub}
+        />
       </span>
-      <ArticleText
-        title={title}
-        subtitle={subtitle}
-        text={description}
-      />
-      <LinkButton
-        className="border p-2 rounded-md text-center z-1 hover:bg-gradient-to-r from-[#76030F] to-[#121B67]"
-        href={buttonHref}
-        text={buttonText}
-        icon={buttonIcon}
-      />
     </div>
   )
 }

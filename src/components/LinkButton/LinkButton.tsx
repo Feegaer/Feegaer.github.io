@@ -7,7 +7,7 @@ export default function LinkButton({ href, icon, text, className }: {href?: stri
       href={href} 
       target="_blank">
         {icon && <FontAwesomeIcon icon={icon} />}
-        <span className="ms-2">{text || ""}</span>
+        {text && <span className={icon && "ms-2"}>{text}</span>}
     </a>
   )
 }

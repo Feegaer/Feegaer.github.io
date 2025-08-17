@@ -1,11 +1,17 @@
+import LinkButton from "../LinkButton/LinkButton";
+
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+
 export default function Navbar() {
+  const socialMediaIconsStyle = "p-3.5 text-center rounded-full transition-colors bg-white text-[#ff0d5a] shadow-lg hover:text-[white] hover:bg-[#ff0d5a]"
   return (
-    <nav className="h-[45px] flex items-center border-b border-gray-20 sticky top-0 left-0 right-0 z-10">
-      <ul>
-        <li className="p-3">
-          <a href="#" target="_blank" rel="noopener noreferrer">Proyectos</a>
-        </li>
-      </ul>
+    <nav>
+      <div className="flex justify-center gap-3">
+        <LinkButton icon={faEnvelope} className={socialMediaIconsStyle} href="mailto:lanevecristianezequiel@gmail.com" />
+        <LinkButton icon={faLinkedinIn} className={socialMediaIconsStyle} href="https://www.linkedin.com/in/ezelnv" />
+        <LinkButton icon={faGithubAlt} className={socialMediaIconsStyle} href="https://www.github.com/Feegaer" />
+      </div>
     </nav>
   )
 }
