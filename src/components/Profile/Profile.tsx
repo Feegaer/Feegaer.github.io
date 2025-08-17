@@ -7,7 +7,7 @@ export default function Profile()
     <section className="grid justify-center text-center items-center text-shadow-sm">
       <img 
         alt="Profile Pic" 
-        src="/src/assets/profile_pic.png"
+        src="/profile_pic.png"
         className="h-[180px] w-[180px] object-cover rounded-full mb-4 mx-auto border-[#ff0d5a] border-4"
       />
       <h6>Cristian Ezequiel La Neve</h6>

@@ -9,14 +9,14 @@ import { faCircleDown } from "@fortawesome/free-regular-svg-icons";
 
 function App() {  
   return(
-    <main className="grid gap-10 p-4 bg-[url(/src/assets/bg_pattern_topographic.webp)]">
+    <main className="grid gap-10 p-4 bg-[url(/bg_pattern_topographic.webp)]">
       <Navbar />
       <Profile />
       <ProjectList />
       <div className="grid gap-4 text-center">
         <header className="font-bold">Curriculum Vitae</header>
         <LinkButton
-          href="/src/assets/CV_ES_CRISTIAN_EZEQUIEL_LA_NEVE.pdf"
+          href="/CV_ES_CRISTIAN_EZEQUIEL_LA_NEVE.pdf"
           text="Descargar"
           className="border-2 bg-[#ff0d5a] p-2 rounded-md font-semibold"
           icon={faCircleDown}
