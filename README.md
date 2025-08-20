@@ -1,2 +1,6 @@
 # Feegaer.github.io
-Webpage where i will upload my projects. Actually i'm testing it.
+ES
+Página web donde subiré mis proyectos y recursos. 
+
+EN
+Webpage where will upload projects and resources.
