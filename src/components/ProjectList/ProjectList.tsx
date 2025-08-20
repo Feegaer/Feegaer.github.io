@@ -13,7 +13,7 @@ export default function ProjectList({ cards }: { cards?: Array<any>}) {
       hrefInnerText={card.hrefInnerText}
       key={index}
     />
-  )) : <p className="text-center p-2 bg-white/30 rounded-md">No se han encontrado proyectos cargados aun...</p>;
+  )) : <p className="text-center p-2 bg-white/15 rounded-md">No se han encontrado proyectos cargados aun...</p>;
 
   return(
     <div className="grid gap-4">

@@ -4,7 +4,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 
 export default function Navbar() {
-  const socialMediaIconsStyle = "p-3.5 text-center rounded-full transition-colors bg-white text-[#ff0d5a] shadow-lg hover:text-[white] hover:bg-[#ff0d5a]"
+  const socialMediaIconsStyle = "p-2 px-3 text-center rounded-lg transition-colors bg-[var(--white)] text-[var(--tertiary-color)] hover:text-[var(--white)] hover:bg-[var(--tertiary-color)] hover:scale-[1.15] transition-color"
   return (
     <nav>
       <div className="flex justify-center gap-3">

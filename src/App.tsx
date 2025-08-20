@@ -9,7 +9,7 @@ import { faCircleDown } from "@fortawesome/free-regular-svg-icons";
 
 function App() {  
   return(
-    <main className="grid gap-10 p-4 bg-[url(/bg_pattern_topographic.webp)]">
+    <main className="grid gap-10 p-4">
       <Navbar />
       <Profile />
       <ProjectList />
@@ -18,7 +18,7 @@ function App() {
         <LinkButton
           href="/CV_ES_CRISTIAN_EZEQUIEL_LA_NEVE.pdf"
           text="Descargar"
-          className="border-2 bg-[#ff0d5a] p-2 rounded-md font-semibold"
+          className="border-2 bg-[var(--tertiary-color)] hover:bg-[var(--tertiary-color)]/80 p-2 rounded-md font-semibold transition-colors"
           icon={faCircleDown}
         />
       </div>

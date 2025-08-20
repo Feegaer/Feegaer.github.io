@@ -8,7 +8,7 @@ export default function Profile()
       <img 
         alt="Profile Pic" 
         src="/profile_pic.png"
-        className="h-[180px] w-[180px] object-cover rounded-full mb-4 mx-auto border-[#ff0d5a] border-4"
+        className="h-[180px] w-[180px] object-cover rounded-full mb-4 mx-auto shadow-xl border-2"
       />
       <h6>Cristian Ezequiel La Neve</h6>
       <h6 className="font-bold">Fullstack Developer</h6>
