@@ -16,9 +16,9 @@ function App() {
       <div className="grid gap-4 text-center">
         <header className="font-bold">Curriculum Vitae</header>
         <LinkButton
-          href="/CV_ES_CRISTIAN_EZEQUIEL_LA_NEVE.pdf"
+          href="https://drive.google.com/file/d/1fGA6TGc4aThNhSxQbayIbece7rZtQ0vM/view?usp=drive_link"
           text="Descargar"
-          className="border-2 bg-[var(--tertiary-color)] hover:bg-[var(--tertiary-color)]/80 p-2 rounded-md font-semibold transition-colors"
+          className="border-1 bg-[var(--tertiary-color)] hover:bg-[var(--tertiary-color)]/80 p-2 rounded-md font-semibold transition-colors"
           icon={faCircleDown}
         />
       </div>
