@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export default function LinkButton({ href, icon, text, className }: {href?: string, icon: any, text?: string, className?: string }) {
+export default function LinkButton({ href, icon, text, className }: {href?: string, icon?: any, text?: string, className?: string }) {
   return (
     <a 
       className={className} 
