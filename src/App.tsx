@@ -54,8 +54,14 @@ function App() {
       <div className="grid gap-4 text-center">
         <header className="font-bold">Curriculum Vitae</header>
         <LinkButton
-          href="https://drive.google.com/file/d/1fGA6TGc4aThNhSxQbayIbece7rZtQ0vM/view?usp=drive_link"
-          text="Descargar"
+          href="https://drive.google.com/file/d/12LPwBNPteh8iuaxlYTjLMSoSS0hQYZxk/view?usp=sharing"
+          text="Descargar - CV Español"
+          className="border-1 bg-[var(--tertiary-color)] hover:bg-[var(--tertiary-color)]/80 p-2 rounded-md font-semibold transition-colors"
+          icon={faCircleDown}
+        />
+        <LinkButton
+          href="https://drive.google.com/file/d/1i8GTkzo_6KgTnrObt953eqe0NNmJnVHX/view?usp=sharing"
+          text="Download - CV English"
           className="border-1 bg-[var(--tertiary-color)] hover:bg-[var(--tertiary-color)]/80 p-2 rounded-md font-semibold transition-colors"
           icon={faCircleDown}
         />
